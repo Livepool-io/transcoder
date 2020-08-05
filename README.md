@@ -22,7 +22,7 @@ The following are required in order to begin:
 
    **Note: use your own Ethereum address in order to receive payment.**
 ```
-wget https://github.com/Livepool-io/transcoder/releases/download/v0.5.7/0.5.7-55441d23_livepool-linux-amd64.tar.gz
+wget https://github.com/Livepool-io/transcoder/releases/download/v0.5.9/0.5.9-270eb99f_livepool-linux-amd64.tar.gz
 tar -xzf 0.5.7-55441d23_livepool-linux-amd64.tar.gz
 ./livepool-linux-amd64/livepool -ethAcctAddr 0x396e1f313E99843631Ae66f534e05ec12f16CB1D
 ```
