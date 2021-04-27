@@ -10,9 +10,11 @@
 
 3. Move the binary to your executable `PATH`
 
-4. Find your GPU PCIe IDs using `nvidia-smi` , this corresponds to your PCIe 16x slots, i.e. if you have one slot with one GPU your ID will be 0. 
+4. Find your GPU PCIe IDs using `nvidia-smi` , this corresponds to your PCIe 16x slots, i.e. if you have one slot with one GPU your ID will be 0.
 
-5. Start livepool
+5. Install and run the [NVENC patch](https://github.com/keylase/nvidia-patch) for Nvidia drivers to enable multiple [nvenc](https://developer.nvidia.com/video-encode-and-decode-gpu-support-matrix-new) streams.
+
+6. Start livepool
 
 ```
 $ livepool -ethAcctAddr $(YOUR_ETH_ADDRESS) -nvidia $(PCIe IDs comma-separated)
