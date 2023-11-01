@@ -1,0 +1,12 @@
+version: "3.8"
+
+name: livepool
+
+services:
+  video-miner-pool:
+    build: .
+    image: livepool-pool
+    container_name: livepool-pool
+    restart: unless-stopped
+    runtime: nvidia
+    command: ["-ethAcctAddr"]
