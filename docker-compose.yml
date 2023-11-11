@@ -1,0 +1,19 @@
+version: "3.8"
+
+name: livepool
+
+services:
+  video-miner-pool:
+    build: .
+    image: livepool-pool
+    container_name: livepool-pool
+    restart: unless-stopped
+    runtime: nvidia
+    volumes:
+      - "/etc/timezone:/etc/timezone:ro" # Set timezone to host timezone.
+      - "/etc/localtime:/etc/localtime:ro" # Set time to host time.
+    command: ["-ethAcctAddr", "<ETH_ADDRESS>"]
+
+networks:
+  default:
+    name: livepool_pool
